@@ -27,7 +27,7 @@ app.use(function (req, res) {
 app.listen(3000);
 ```
 
-Here we passed the callback to `app.use()` rather than passing it directly to `http.createServer()`. This is a middleware function. Such functions are used to defines the steps that a request must go through before a response is returned.
+Here we passed the callback to `app.use()` rather than passing it directly to `http.createServer()`. This is a middleware function. Such functions are used to defines the steps that a request must go through before a response is returned (or an error is thrown).
 
 So, while middleware are just functions, `app.use` allows us to define such functions for the request to flow through:
 
